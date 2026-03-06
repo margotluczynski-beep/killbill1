@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Kill Bill</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+  <div id="conteneur">
+      <h1>KILL BILL</h1>
+      
+        <div> <a href="index.html"> MENU</a> </div>
+
+       <div><a href="game.html">ESCAPE GAME</a></div>
+     
+       <div ><a href="2.html">KILL BILL 2</a></div>
+       </div>
+      <h2 id="jeux">Escape Game</h2>
+        <p id="code">Objectif:Trouvez les 4 points cardinaux pour tuer Bill</p>
+         <p id="oui">BRAVO VOUS AVEZ TROUVE, LE DEUXIEME  POINT CARDINAUX SE NOMME: LE POINT DU SOUFFLE COUPE (SUR LE COTE DE LA CAGE THORACIQUE)</p>
+        <p id="chap1">.Vous vous trouvez sur l'étape 3/4</p>
+        <p>Nous allons tester votre mémoire</p>
+<p id='resultat'>Quel est l'art martial enseigné par Pai Mei?
+</p>
+
+<select  id="choix"  name="lang"  >
+<option  value="fr"> Mata Sak</option>
+<option  value="zh"> Sutto Tak</option>
+<option  value="it">Dim Mak</option>
+</select>
+<input type="button" value="Valider" onclick="selection();" />
+<p id="resultats"></p>
+<script>
+    
+
+function selection()
+ {
+    const select = document.getElementById("choix").value;
+     if (select=='it')
+             {document.getElementById('resultats').innerHTML= '<div id="c3"><a href="chemin3.html"> Passer à l étape suivante</a></div>';}
+     
+    else 
+
+        {document.getElementById('resultat').innerHTML= 'mauvaise réponse';}
+    
+  }
+</script>
+</body>
+</html>        

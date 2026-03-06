@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Kill Bill</title>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+  <div id="conteneur">
+      <h1>KILL BILL</h1>
+      
+        <div> <a href="index.html"> MENU</a> </div>
+
+       <div><a href="game.html">ESCAPE GAME</a></div>
+
+       <div ><a href="2.html">KILL BILL 2</a></div>
+       </div>
+      <h2 id="jeux">Escape Game</h2>
+        <p id="code"></p>
+         <p id="oui">BRAVO VOUS AVEZ DESORMAIS REUSSI A TROUVER LES POINTS CARDINAUX</p>
+
+        
+        <script>
+          
+
+        function lettree()
+        {
+            var a=prompt("entrer une lettre");
+            var long=a.length;
+            var trouve=false;
+            
+            for (var N=0 ; N<=a.length ; N=N+1 )
+            { lettre=a.charAt(N);
+
+                if("i"==lettre)
+            {
+                trouve=true;
+        }
+           
+            lettre=a.charAt(N)
+        } 
+        if (trouve==false){
+            alert("ce n'est pas la bonne lettre ")
+            lettree()
+        }
+        else
+            {
+                alert("bravo vous avez trouver que la lettre était i")
+             }
+        }  
+        lettree() 
+    
+
+
+     
+
+    </script>
+    </body>
+</html>        
